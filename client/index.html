@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Uploading with Multer</title>
+</head>
+<body>
+
+<div>
+  <h2> Single File </h2>
+  <form action="/api/single-file" enctype="multipart/form-data" method="POST"> 
+    <input type="file" name="myFile" />
+    <input type="submit" value="Upload a file" class="submit-button"/>
+  </form>
+</div>
+
+<div>
+  <h2> Multiple File </h2>
+  <form action="/api/multiple-file" enctype="multipart/form-data" method="POST">
+    <input type="file" name="myFiles" multiple>
+    <input type="submit" value="Upload your photos" class="submit-button"/>
+  </form>
+</div>
+
+<div>
+  <h2>Photo</h2>
+  <form action="/api/upload-photo" enctype="multipart/form-data" method="POST"> 
+    <input type="file" name="picture" accept="image/*" />
+    <input type="submit" value="Upload an Image" class="submit-button"/>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
